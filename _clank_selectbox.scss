@@ -1,0 +1,30 @@
+clank-selectbox{
+  display:block;
+}
+
+
+/*
+//
+/// This scss is only meant for an example, it does not need to be included in your code */
+
+clank-selectbox{
+    
+  label{
+    padding:3px 5px;
+    border:1px solid black;
+  }
+  
+  li{
+    
+    &[selected]{
+      font-weight:bold;
+    }
+  }
+  
+  &[dropdown="closed"]{
+    
+    ul{
+      display:none;
+    }
+  }  
+}

@@ -1,0 +1,16 @@
+{
+  "name": "clank-selectbox",
+  "main": "clank-selectbox.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/skribbz14/clank-selectbox",
+  "authors": [
+    "skribbz14 <kyle@looseygooseyart.com>"
+  ],
+  "description": "Clank Selectbox is a module that finds and replaces the <select> element with fully stylable divs.",
+  "keywords": [
+    "AngularJS",
+    "Selectbox",
+    "Clank"
+  ],
+  "license": "MIT"
+}
