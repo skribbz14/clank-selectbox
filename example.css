@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    max-width: 90vw;
+    margin: auto;
+    padding: 4vh 0;
+}
+
+.selext {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.selext--label {
+    border: 1px solid #333;
+    padding: 10px 25px;
+    display: inline-block;
+    width: 300px;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+
+.selext--list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 300px;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    padding: 0 15px;
+    overflow:hidden;
+}
+
+.selext--item {
+    float: left;
+    width: 100%;
+    padding: 5px 10px;
+    transition:all 0.35s ease-out;
+    background-color:white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.selext--item[selected]{
+  font-weight:bold;
+}
+
+.selext--item:hover{
+  background-color: #f5f3f3;
+  transition:all 0.15s ease;
+}
+
+.selext--button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.selext[dropdown="closed"] .selext--list{
+  height:0;
+}
+
+.selext[dropdown="opened"] .selext--list{
+  height:auto;
+}
